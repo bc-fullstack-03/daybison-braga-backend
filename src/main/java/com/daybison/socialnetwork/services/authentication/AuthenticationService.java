@@ -2,9 +2,7 @@ package com.daybison.socialnetwork.services.authentication;
 
 import com.daybison.socialnetwork.services.security.IJwtService;
 import com.daybison.socialnetwork.services.user.IUserService;
-import com.daybison.socialnetwork.utils.validation.AuthenticateValidator;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 @Service
