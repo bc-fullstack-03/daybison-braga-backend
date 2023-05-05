@@ -22,13 +22,13 @@ public class PostController {
         this._postService = _postService;
     }
 
-    @PostMapping
+    @PostMapping()
     public ResponseEntity<Post> createPost(@RequestBody CreatePostRequest request) {
         Post post = _postService.createPost(request);
         return ResponseEntity.ok(post);
     }
 
-    @GetMapping
+    @GetMapping()
     public ResponseEntity<List<FindPostResponse>> getAllPosts() {
         List<FindPostResponse> responseList = _postService.getAllPosts();
         return ResponseEntity.ok().body(responseList);
